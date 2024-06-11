@@ -156,6 +156,7 @@ sudo docker run -v $(pwd):/build/ -it mu:v1
 | QTI MTP 888        | qcom-mtp8350           | ✅              | [Ayu](https://github.com/chenyu0329)               |
 | Galaxy Z Fold 3 5G | samsung-q2q            | ✅              | None                                               |
 | ZTE A31 Pro        | zte-p875a02            | ✅              | None                                               |
+| Xiaomi Mi 11       | xiaomi-venus           | ✅              | [Daniel224455](https://github.com/Daniel224455)    |
 
 
 ### *SM8550*
