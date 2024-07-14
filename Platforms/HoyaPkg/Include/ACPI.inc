@@ -1,9 +1,14 @@
 FILE FREEFORM = 7E374E25-8E01-4FEE-87F2-390C23C606CD {
-	SECTION RAW = HoyaPkg/Device/$(TARGET_DEVICE)/ACPI/APIC.UniCore.aml
-	SECTION RAW = HoyaPkg/Device/$(TARGET_DEVICE)/ACPI/DBG2.aml
-	SECTION RAW = HoyaPkg/Device/$(TARGET_DEVICE)/ACPI/DSDT_enchilada.aml
-	SECTION RAW = HoyaPkg/Device/$(TARGET_DEVICE)/ACPI/FACP.aml
-	SECTION RAW = HoyaPkg/Device/$(TARGET_DEVICE)/ACPI/GTDT.aml
-
+	SECTION RAW = HoyaPkg/Device/$(TARGET_DEVICE)/ACPI/Csrt.acpi
+	SECTION RAW = HoyaPkg/Device/$(TARGET_DEVICE)/ACPI/dbg2.acpi
+	SECTION RAW = HoyaPkg/Device/$(TARGET_DEVICE)/ACPI/Dsdt.aml
+	SECTION RAW = HoyaPkg/Device/$(TARGET_DEVICE)/ACPI/Facp.acpi
+	SECTION RAW = HoyaPkg/Device/$(TARGET_DEVICE)/ACPI/Facs.acpi
+	SECTION RAW = HoyaPkg/Device/$(TARGET_DEVICE)/ACPI/Gtdt.acpi
+	SECTION RAW = HoyaPkg/Device/$(TARGET_DEVICE)/ACPI/IORT.acpi
+	SECTION RAW = HoyaPkg/Device/$(TARGET_DEVICE)/ACPI/Madt.acpi
+	SECTION RAW = HoyaPkg/Device/$(TARGET_DEVICE)/ACPI/Mcfg.acpi
+	SECTION RAW = HoyaPkg/Device/$(TARGET_DEVICE)/ACPI/Pptt.acpi
+	SECTION RAW = HoyaPkg/Device/$(TARGET_DEVICE)/ACPI/TPM2.acpi
 	SECTION UI = "AcpiTables"
 }
