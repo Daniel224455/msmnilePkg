@@ -61,8 +61,13 @@ APRIORI DXE {
     INF HoyaPkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/PmicDxe/PmicDxeLa.inf
 #    INF Hoya/BOOT.XF.2.2-00101-SDM845WZB-1/QcomPkg/Drivers/PmicDxe/PmicDxeWp.inf
 #   INF HoyaPkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/VariableDxe/VariableDxe.inf
-    INF MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe.inf
+#    INF MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe.inf
 #    INF HoyaPkg/Device/$(TARGET_DEVICE)/PatchedBinaries/DisplayDxe.inf
+    FILE DRIVER = CBD2E4D5-7068-4FF5-B462-9822B4AD8D60 {
+            SECTION PE32 = SurfaceDuoFamilyPkg/Binaries/VariableRuntimeDxe.efi
+            SECTION DXE_DEPEX_EXP = {gEfiPcdProtocolGuid AND gEfiDevicePathUtilitiesProtocolGuid}
+            SECTION UI = "VariableRuntimeDxe"
+    }
 
     INF Hoya/BOOT.XF.2.2-00101-SDM845WZB-1/QcomPkg/Drivers/CPRDxe/CPRDxe.inf
     INF MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer.inf
